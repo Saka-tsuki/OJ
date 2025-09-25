@@ -27,11 +27,9 @@ int main(){
 			break;
 		}
 	}
-	for(i=0;i<3;i++){
-		printf("%d\n",line1[i]);
-		printf("%d\n",line2[i]);
-		printf("%d\n",line3[i]);
-	}
+	sum1=line1[0]+line2[1]+line3[2];
+	sum2=line1[2]+line2[1]+line3[0];
+	printf("%d %d",sum1,sum2);
 	
 	return 0;
 }

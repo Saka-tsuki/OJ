@@ -1,37 +1,12 @@
 #include<stdio.h>
 
 int main(){
-	int line1[3],line2[3],line3[3];
-	int num,i,sum1,sum2;
-	i=0;
-	while((scanf("%d",&num))==1){
-		line1[i]=num;
-		i++;
-		if(getchar()=='\n'){
-			break;
-		}
-	}
-	i=0;
-	while((scanf("%d",&num))==1){
-		line2[i]=num;
-		i++;
-		if(getchar()=='\n'){
-			break;
-		}
-	}
-	i=0;
-	while((scanf("%d",&num))==1){
-		line3[i]=num;
-		i++;
-		if(getchar()=='\n'){
-			break;
-		}
-	}
-	for(i=0;i<3;i++){
-		printf("%d\n",line1[i]);
-		printf("%d\n",line2[i]);
-		printf("%d\n",line3[i]);
-	}
-	
-	return 0;
-}
+	char *p;
+	char **ptr;
+	char a[20];
+	scanf("%s",a);
+	p=&a[0];
+	ptr=&p;
+	printf("%d",*ptr) ;
+	 
+} 

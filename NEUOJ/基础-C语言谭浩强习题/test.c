@@ -5,8 +5,8 @@ int main(){
 	char **ptr;
 	char a[20];
 	scanf("%s",a);
-	p=&a[0];
+	p=a[0];
 	ptr=&p;
-	printf("%d",*ptr) ;
+	printf("%c",**ptr) ;
 	 
 } 
